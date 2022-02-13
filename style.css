@@ -1,0 +1,151 @@
+:root {
+   --color-gold: #bdae82;
+   --color-black: #000;
+   --color-white: #fff;  
+}
+
+* {
+   box-sizing: border-box;
+   list-style: none;
+	text-decoration: none;
+}
+
+html {
+   scroll-behavior: smooth; 
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-width: 320px;
+   min-height: 100vh;
+   margin: 0;
+   padding: 0;
+   font-family: 'Inter', sans-serif;
+   font-size: 10px;
+   font-weight: 400;
+   line-height: 1.5;
+   background: var(--color-black);
+   color: var(--color-white);
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0 20px;
+   min-height: 50px;
+}
+
+.header {
+   text-align: center;
+   background-color: var(--color-gold);
+}
+.container-header {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.main {
+   text-align: center;
+   margin-bottom: auto;
+   padding-top: 200px;
+}
+
+.quote-btn {
+   width: 200px;
+   height: 50px;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: var(--color-gold);
+   color: var(--color-black);
+}
+
+.quote-btn:hover {
+   font-size: 1.3rem;
+   background-color: var(--color-black);
+   border: 2px solid var(--color-gold);
+   color: var(--color-white);
+   box-shadow: 0 0.6em 0.5em -0.5em var(--color-gold);
+	transition: 1s;
+   cursor: pointer;
+}
+
+.lang-btn {
+   width: 100px;
+   height: 40px;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: transparent;
+   color: var(--color-black);
+   border: 2px solid var(--color-black);
+}
+
+.lang-btn:hover {
+   cursor: pointer;
+}
+
+.lang-btn.active {
+   background-color: var(--color-black);
+   color: var(--color-white);
+   border: 2px solid var(--color-black);
+}
+
+.text {
+   font-size: 1.4rem;
+   font-weight: 700;
+}
+
+.author {
+   font-size: 1rem;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+	fill: var(--color-white);
+	cursor: pointer;
+}
+
+.icon:hover {
+	fill: var(--color-gold);
+	transition: 1s;
+}
+
+.icon:focus {
+   fill: var(--color-gold);
+}
+
+.foot {
+   display: flex;
+}
+
+.school-link {
+   margin-left: auto;
+}
+
+.year-author {
+	display: flex;
+	width: 185px;
+	gap: 20px;
+	align-items: center;
+   font-size: 1rem;
+   color: var(--color-gold);
+}
+
+.icon-rss {
+   width: 90px;
+   height: 30px;
+   margin: 10px 0;
+}
+
+.footer__link {
+	cursor: pointer;
+   color: var(--color-white);
+}
+
+.footer__link:hover {
+	color: var(--color-gold);
+	transition: 1s;
+}
